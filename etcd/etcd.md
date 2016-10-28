@@ -49,3 +49,16 @@ etcd \
   --initial-cluster-state=new \
   --data-dir=/var/lib/etcd
 ```
+
+#### Using the rest api
+
+```sh
+# GET value
+curl http://<etcd ip>:2379/v2/keys/foo
+
+# SET value
+curl https://<etcd ip>:2379/v2/keys/foo -XPUT -d value="foo"
+
+# DELETE value
+curl https://<etcd ip>:2379/v2/keys/foo -XDELETE
+```

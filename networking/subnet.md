@@ -6,7 +6,7 @@
 
 `subnet mask` - a 32bit number which is used to bit multiply a network address to reveal an underlying subnetworking
 
-### Binary Numbers
+## Binary Numbers
 
 Binary number representation. Going from right to left each digit represents the sum of the previous represented number starting from 1.
 
@@ -49,7 +49,7 @@ and fourth octect is 1
 11000000.01011101.00000010.00000001
 ```
 
-### IP Address
+## IP Address
 
 IP address is in the `dotted decimal format` which is XXX.XXX.XXX.XXX each number between a decimal is a digit (also called an `octet`) ranging from 0 - 255. The range is 0-255 is because each digit is a 8-bit number which has the maximum number of 256. The whole IP address is a 32 bit number.
 
@@ -117,3 +117,12 @@ the range of this subnet is 10.1.2.1 - 10.1.2.127
 ```
 
 After applying the mask to the given ip, only the bits after the line can be changed. This means the last 7 bits of the fourth octect, any combinations of changes to those bits is the range of this subnet. 10.1.2.1/26
+
+## Private IPs
+
+Allowed private ip ranges.
+
+- 10.0.0.1 - 10.255.255.255
+- 172.16.0.1 - 172.31.255.254
+- 192.168.0.1 - 192.168.255.254
+
