@@ -57,3 +57,14 @@ require('babel-polyfill')
 **(optional) plugins**
 
 - babel-plugin-transform-class-properties
+
+## Debugging Memory
+
+Use the process module to look at heap memory to determine if there is memory leaks over time.
+
+```js
+const process = require('process')
+
+process.memoryUsage()
+// => { rss: Number, heapTotal: Number, heapUsed: Number }
+```
